@@ -54,14 +54,16 @@ set listchars=tab:▸\ ,eol:¬
 nnoremap j gj
 nnoremap k gk
 
+"colours and syntax highlighting
 color sparky
+syntax on
 
 set tags=~/tags
 
 "Auto lint check python files
 autocmd FileType python compiler pylint
 
-"Toggle nerdtree with tn
+"Toggle nerdtree with nt
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>nf :NERDTreeFind<cr>
 let g:NERDTreeQuitOnOpen = 1

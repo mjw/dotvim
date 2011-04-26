@@ -43,3 +43,6 @@
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = git://github.com/hallettj/jslint.vim.git
+[submodule "bundle/jekyll"]
+	path = bundle/jekyll
+	url = git://github.com/csexton/jekyll.vim.git

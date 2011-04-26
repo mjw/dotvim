@@ -1,0 +1,21 @@
+ Installation:
+
+    git clone git://github.com/mjw/dotvim.git ~/.vim
+
+Create symlinks:
+
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+Switch to the `~/.vim` directory, and fetch submodules:
+
+    cd ~/.vim
+    git submodule init
+    git submodule update
+
+For jslint to work you need to install node, npm and node-jslint
+
+    node: https://github.com/joyent/node/wiki/Installation
+    npm: http://npmjs.org/
+    node-jslint: https://github.com/reid/node-jslint
+
+Put local configurations in ~/.vimrc-local (ie gist username/api keys etc)

@@ -1,0 +1,15 @@
+git submodule add git://github.com/c9s/gsession.vim.git bundle/gsession
+git submodule add git://github.com/mileszs/ack.vim.git bundle/ack
+git submodule add git://github.com/scrooloose/nerdtree.git bundle/nerdtree
+git submodule add git://github.com/rstacruz/sparkup.git bundle/sparkup
+git submodule add git://github.com/tpope/vim-abolish.git bundle/abolish
+git submodule add git://github.com/tpope/vim-fugitive.git bundle/fugitive
+git submodule add git://github.com/tpope/vim-pastie.git bundle/pastie
+git submodule add git://github.com/petdance/vim-perl.git bundle/vim-perl
+git submodule add git://github.com/tpope/vim-repeat.git bundle/repeat
+git submodule add git://github.com/tpope/vim-speeddating.git bundle/speeddating
+git submodule add git://github.com/tpope/vim-surround.git bundle/surround
+git submodule add git://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter
+git submodule add git://github.com/vim-scripts/perl-support.vim.git bundle/perl-support
+git submodule add git://github.com/sjl/gundo.vim.git bundle/gundo
+git submodule add git://github.com/hallettj/jslint.vim.git bundle/jslint

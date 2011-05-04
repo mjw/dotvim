@@ -3,6 +3,12 @@ filetype off
 "showmarks clashes with gsessions so we remap
 let g:gsession_non_default_mapping = 1
 
+"pathogen settings
+let g:pathogen_disabled = []
+if v:version < '703' || !has('python')
+    call add(g:pathogen_disabled, 'gundo')
+endif
+
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
@@ -129,3 +135,8 @@ nnoremap <leader>ut :GundoToggle<CR>
 
 "local (non-github public) settings
 source ~/.vimrc-local
+
+"jekyll mappings
+map <Leader>jb  :JekyllBuild<CR>
+map <Leader>jn  :JekyllPost<CR>
+map <Leader>jl  :JekyllList<CR>

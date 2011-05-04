@@ -14,3 +14,5 @@ git submodule add git://github.com/vim-scripts/perl-support.vim.git bundle/perl-
 git submodule add git://github.com/sjl/gundo.vim.git bundle/gundo
 git submodule add git://github.com/hallettj/jslint.vim.git bundle/jslint
 git submodule add git://github.com/csexton/jekyll.vim.git bundle/jekyll
+git submodule add git://github.com/vim-scripts/FuzzyFinder.git bundle/fuzzyfinder
+git submodule add git://github.com/vim-scripts/L9.git bundle/L9

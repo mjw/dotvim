@@ -57,6 +57,9 @@ set formatoptions=qrn1
 set list
 set listchars=tab:▸\ ,eol:¬
 
+"save buffer list in viminfo
+set viminfo+=%
+
 nnoremap j gj
 nnoremap k gk
 
@@ -92,7 +95,7 @@ let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 "nnoremap @p4e :!p4 edit %:e
 "nnoremap @p4d :!p4 diff %
 "nnoremap @p4r :!p4 revert %
-let g:p4EnableActiveStatus=0
+"let g:p4EnableActiveStatus=0
 
 "Quickfix close/open
 nnoremap <leader>qfc :cclose<cr>
@@ -140,3 +143,6 @@ source ~/.vimrc-local
 map <Leader>jb  :JekyllBuild<CR>
 map <Leader>jn  :JekyllPost<CR>
 map <Leader>jl  :JekyllList<CR>
+
+"bufexplorer settings
+let g:bufExplorerShowRelativePath = 1

@@ -52,3 +52,6 @@
 [submodule "bundle/fuzzyfinder"]
 	path = bundle/fuzzyfinder
 	url = git://github.com/vim-scripts/FuzzyFinder.git
+[submodule "bundle/buffers_search_and_replace"]
+	path = bundle/buffers_search_and_replace
+	url = git://github.com/vim-scripts/buffers_search_and_replace.git

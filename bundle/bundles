@@ -16,5 +16,6 @@ git submodule add git://github.com/hallettj/jslint.vim.git bundle/jslint
 git submodule add git://github.com/csexton/jekyll.vim.git bundle/jekyll
 git submodule add git://github.com/vim-scripts/FuzzyFinder.git bundle/fuzzyfinder
 git submodule add git://github.com/vim-scripts/L9.git bundle/L9
-#git submodule add git://github.com/vim-scripts/buffers_search_and_replace.git bundle/buffers_search_and_replace
+git submodule add git://github.com/vim-scripts/buffers_search_and_replace.git bundle/buffers_search_and_replace
 git submodule add git://github.com/vim-scripts/buffergrep.git bundle/buffergrep
+git submodule add git://github.com/tpope/vim-unimpaired.git bundle/unimpaired

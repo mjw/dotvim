@@ -81,10 +81,16 @@ let g:NERDTreeQuitOnOpen = 1
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 "Taglist mappings etc
-nnoremap <leader>tt :TlistToggle<cr>
-let Tlist_Show_One_File = 1
-let Tlist_Close_On_Select = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
+"nnoremap <leader>tt :TlistToggle<cr>
+"let Tlist_Show_One_File = 1
+"let Tlist_Close_On_Select = 1
+"let Tlist_GainFocus_On_ToggleOpen = 1
+
+"Tagbar mappings etc
+nnoremap <leader>tt :TagbarToggle<cr>
+let g:tagbar_left = 1
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
 
 "showmarks 
 "let g:showmarks_enable = 0

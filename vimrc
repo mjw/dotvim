@@ -67,7 +67,7 @@ nnoremap k gk
 color sparky
 syntax on
 
-set tags=./tags
+set tags=./tags;/
 
 "Auto lint check python files
 autocmd FileType python compiler pylint

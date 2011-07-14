@@ -19,3 +19,25 @@ For jslint to work you need to install node, npm and node-jslint
     node-jslint: https://github.com/reid/node-jslint
 
 Put local configurations in ~/.vimrc-local (ie gist username/api keys etc)
+
+Useful key mappings:
+
+    \tt  - browse current file by class/method hierarchy (tagbar)
+    \nt  - toggle NERDtree file browser (NERDtree)
+    \be  - browse current buffers (to switch between open files) (buffexplorer)
+
+    \qfc - close quickfix window
+    \qfo - open quickfix window
+    ]q   - go to next quickfix error (vim-unimpaired)
+    [q   - go to previous quickfix error  (vim-unimpaired)
+
+    \ry  - run perltidy (perl-support)
+    \rc  - run perlcritic (perl-support)
+
+Installed Plugins (see .vim/bundle directory, managed by pathogen):
+
+abolish, ack, bufexplorer, buffergrep, buffers_search_and_replace, bundles,
+bundleupdate.sh, fugitive, fuzzyfinder, genutils, gist, gnupg, gsession, gundo,
+jekyll, jslint, L9, nerdcommenter, nerdtree, pastie, perforce, perl-support,
+project, pylint, repeat, scratch, showmarks, sparkup, speeddating, surround,
+tagbar, taglist, unimpaired, vimoutliner, vim-perl

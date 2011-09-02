@@ -12,6 +12,11 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
+To update submodules at a later date:
+
+    cd ~/.vim
+    git submodule foreach git pull
+
 For jslint to work you need to install node, npm and node-jslint
 
     node: https://github.com/joyent/node/wiki/Installation
@@ -25,6 +30,7 @@ Useful key mappings:
     \tt  - browse current file by class/method hierarchy (tagbar)
     \nt  - toggle NERDtree file browser (NERDtree)
     \be  - browse current buffers (to switch between open files) (buffexplorer)
+    \bp  - bash prompt here (in current files directory)
 
     \qfc - close quickfix window
     \qfo - open quickfix window

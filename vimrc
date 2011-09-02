@@ -80,6 +80,10 @@ let g:NERDTreeQuitOnOpen = 1
 "Ack is ack-grep on Ubuntu#
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
+"Set ack-grep as grepprg
+set grepprg=ack-grep\ --cpp\ --cc\ --perl\ --python\ --make
+nnoremap <leader>g :grep <C-R>=expand("<cword>")<CR><CR>
+
 "Taglist mappings etc
 "nnoremap <leader>tt :TlistToggle<cr>
 "let Tlist_Show_One_File = 1
@@ -152,3 +156,6 @@ map <Leader>jl  :JekyllList<CR>
 
 "bufexplorer settings
 let g:bufExplorerShowRelativePath = 1
+
+"clear search hightlighting on esc
+nnoremap <esc> :noh<return><esc>

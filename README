@@ -35,6 +35,7 @@ Useful key mappings:
     \nt  - toggle NERDtree file browser (NERDtree)
     \be  - browse current buffers (to switch between open files) (buffexplorer)
     \bp  - bash prompt here (in current files directory)
+    \g   - ack-grep word under cursor (within current directory)
 
     \qfc - close quickfix window
     \qfo - open quickfix window

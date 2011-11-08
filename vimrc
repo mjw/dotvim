@@ -64,18 +64,22 @@ nnoremap j gj
 nnoremap k gk
 
 "colours and syntax highlighting
-color sparky
+color molokai
 syntax on
 
 set tags=./tags;/
 
 "Auto lint check python files
 autocmd FileType python compiler pylint
+"but dont auto open quickfix window
+let g:pylint_cwindow = 0
 
 "Toggle nerdtree with nt
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>nf :NERDTreeFind<cr>
 let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeDirArrows = 1
 
 "Ack is ack-grep on Ubuntu#
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
@@ -158,4 +162,13 @@ map <Leader>jl  :JekyllList<CR>
 let g:bufExplorerShowRelativePath = 1
 
 "clear search hightlighting on esc
-nnoremap <esc> :noh<return><esc>
+"nnoremap <esc> :noh<return><esc>
+
+"fswitch mapping
+nmap <silent> <Leader>ss :FSHere<cr>
+
+"show me whitespace problems
+let c_space_errors=1
+
+"force terminal colours
+set t_Co=256

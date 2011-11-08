@@ -20,3 +20,4 @@ git submodule add git://github.com/vim-scripts/buffers_search_and_replace.git bu
 git submodule add git://github.com/vim-scripts/buffergrep.git bundle/buffergrep
 git submodule add git://github.com/tpope/vim-unimpaired.git bundle/unimpaired
 git submodule add git://github.com/majutsushi/tagbar.git bundle/tagbar
+git submodule add git://github.com/vim-scripts/FSwitch.git bundle/fswitch

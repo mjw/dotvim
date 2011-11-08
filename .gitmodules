@@ -64,3 +64,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "bundle/fswitch"]
+	path = bundle/fswitch
+	url = git://github.com/vim-scripts/FSwitch.git

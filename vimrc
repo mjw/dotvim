@@ -63,8 +63,7 @@ set viminfo+=%
 nnoremap j gj
 nnoremap k gk
 
-"colours and syntax highlighting
-color molokai
+"syntax highlighting (colors controlled in .vimrc-local)
 syntax on
 
 set tags=./tags;/
@@ -87,12 +86,6 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 "Set ack-grep as grepprg
 set grepprg=ack-grep\ --cpp\ --cc\ --perl\ --python\ --make
 nnoremap <leader>g :grep <C-R>=expand("<cword>")<CR><CR>
-
-"Taglist mappings etc
-"nnoremap <leader>tt :TlistToggle<cr>
-"let Tlist_Show_One_File = 1
-"let Tlist_Close_On_Select = 1
-"let Tlist_GainFocus_On_ToggleOpen = 1
 
 "Tagbar mappings etc
 nnoremap <leader>tt :TagbarToggle<cr>

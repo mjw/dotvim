@@ -45,10 +45,12 @@ Useful key mappings:
     \ry  - run perltidy (perl-support)
     \rc  - run perlcritic (perl-support)
 
+
 Installed Plugins (see .vim/bundle directory, managed by pathogen):
 
 abolish, ack, bufexplorer, buffergrep, buffers_search_and_replace, 
 fugitive, fuzzyfinder, genutils, gist, gnupg, gsession, gundo, fswitch,
 jekyll, jslint, L9, nerdcommenter, nerdtree, pastie, perforce, perl-support,
-project, pylint, repeat, scratch, showmarks, sparkup, speeddating, surround,
-tagbar, unimpaired, vimoutliner, vim-perl, vim-colors-solarized
+project, pylint, repeat, scratch, searchscope, showmarks, sparkup, 
+speeddating, surround, tagbar, unimpaired, vimoutliner, vim-perl, 
+vim-colors-solarized

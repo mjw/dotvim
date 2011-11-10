@@ -9,7 +9,12 @@ if v:version < '703' || !has('python')
     call add(g:pathogen_disabled, 'gundo')
 endif
 
-call pathogen#runtime_append_all_bundles()
+if v:version < '702'
+    call add(g:pathogen_disabled, 'fuzzyfinder')
+    call add(g:pathogen_disabled, 'L9')
+endif
+
+call pathogen#infect()
 filetype plugin indent on
 
 set nocompatible

@@ -170,3 +170,7 @@ let c_space_errors=1
 
 "force terminal colours
 set t_Co=256
+
+"buffersaurus
+map ]g :Bsnext<CR>
+map [g :Bsprev<CR>

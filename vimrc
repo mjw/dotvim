@@ -181,3 +181,4 @@ let g:pad_use_default_mappings = 0
 nmap <leader>nl :ListPads<CR>
 nmap <leader>nn :OpenPad<CR>
 nmap <leader>ns :SearchPads<CR>
+

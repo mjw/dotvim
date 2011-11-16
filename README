@@ -27,7 +27,8 @@ For solarized color scheme to work in gnome terminal check out
     http://ethanschoonover.com/solarized
     https://github.com/coolwanglu/gnome-terminal-colors-solarized
 
-Put local configurations in ~/.vimrc-local (ie gist username/api keys etc)
+Put local configurations in ~/.vimrc-local (ie gist username, api keys
+vim pad dir etc)
 
 Useful key mappings:
 
@@ -41,9 +42,15 @@ Useful key mappings:
     \qfo - open quickfix window
     ]q   - go to next quickfix error (vim-unimpaired)
     [q   - go to previous quickfix error  (vim-unimpaired)
+    ]g   - go to next buffersaurus match (:Bsnext)
+    [g   - go to previous buffersaurus match (:Bsprev)
 
     \ry  - run perltidy (perl-support)
     \rc  - run perlcritic (perl-support)
+
+    \nn  - create new note
+    \nl  - list notes
+    \ns  - search notes
 
 
 Installed Plugins (see .vim/bundle directory, managed by pathogen):

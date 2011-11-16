@@ -174,3 +174,10 @@ set t_Co=256
 "buffersaurus
 map ]g :Bsnext<CR>
 map [g :Bsprev<CR>
+
+"vim-pad mappings (\n in insert mode is crazy)
+let g:pad_use_default_mappings = 0
+
+nmap <leader>nl :ListPads<CR>
+nmap <leader>nn :OpenPad<CR>
+nmap <leader>ns :SearchPads<CR>

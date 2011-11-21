@@ -7,9 +7,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "bundle/sparkup"]
-	path = bundle/sparkup
-	url = git://github.com/rstacruz/sparkup.git
 [submodule "bundle/abolish"]
 	path = bundle/abolish
 	url = git://github.com/tpope/vim-abolish.git

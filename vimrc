@@ -7,14 +7,19 @@ let g:gsession_non_default_mapping = 1
 let g:pathogen_disabled = []
 if v:version < '703' || !has('python')
     call add(g:pathogen_disabled, 'gundo')
+else
+    " option only supported in 7.3+
+    set colorcolumn=80
 endif
 
 if v:version < '702'
     call add(g:pathogen_disabled, 'fuzzyfinder')
     call add(g:pathogen_disabled, 'L9')
+    call add(g:pathogen_disabled, 'gnupg')
 endif
 
 call pathogen#infect()
+call pathogen#helptags()
 filetype plugin indent on
 
 set nocompatible
@@ -182,3 +187,8 @@ nmap <leader>nl :ListPads<CR>
 nmap <leader>nn :OpenPad<CR>
 nmap <leader>ns :SearchPads<CR>
 
+" sudo write
+ca w!! w !sudo tee >/dev/null "%"
+
+" sparkup (move cursor onward to next tag)
+let g:sparkupNextMapping = '<c-x>'

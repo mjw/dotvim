@@ -73,3 +73,6 @@
 [submodule "sparkup"]
 	path = sparkup
 	url = git://github.com/rstacruz/sparkup.git
+[submodule "bundle/netrw"]
+	path = bundle/netrw
+	url = https://github.com/vim-scripts/netrw.vim.git

@@ -21,7 +21,7 @@ Contents
         Vim Outliner objects                                     |vo-objects|
 	Post Processors                                  |vo-post-processors|
     CAUTIONS!!!                                                 |vo-cautions|
-    ADVANCED                                                    |vo-advanced|                                                
+    ADVANCED                                                    |vo-advanced|
         Executable Lines                                |vo-executable-lines|
     PLUGINS                                                      |vo-plugins|
         Checkboxes                                              |vo-checkbox|
@@ -38,24 +38,24 @@ LICENSE                                                      *vo-license*
                 Copyright (C) 2004 by Noel Henson
     Licensed under the GNU General Public License (GPL), version 2
     Absolutely no warranty, see COPYING file for details.
-    
+
     If your distro doesn't come with this file
         HTML: http://www.gnu.org/copyleft/gpl.html
-        Text: http://www.gnu.org/copyleft/gpl.txt 
+        Text: http://www.gnu.org/copyleft/gpl.txt
 
 -------------------------------------------------------------------------
 VERSION                                                      *vo-version*
 
     Version 0.3.4
-    Released 
-   
+    Released
+
     Additions/changes:
         Added ,,cp which works like ,,c% but forces % signs to be added
         Color schemes have been added
         Checkboxes and hoisting default to 'on'
 	Modified ,,cb and ,,c% (and ,,cp) to work only on headings
 	Fixed the ,,cz command to make the correct call
-	Added descriptions of VO objects to help 
+	Added descriptions of VO objects to help
 	  (headings, text, tables, etc.)
 
     Bug fixes:
@@ -73,7 +73,7 @@ INSTALLING AND TESTING VIMOUTLINER                           *vo-install*
         Automatic method                            *vo-auto-install*
 
              The new automatic installation targets Unix-compatible
-             platforms. 
+             platforms.
              $ tar xzvf vimoutliner-0.3.x.tar.gz
              $ cd vimoutliner
              $ sh install.sh
@@ -102,7 +102,7 @@ INSTALLING AND TESTING VIMOUTLINER                           *vo-install*
              being replaced with newer versions. So if you put some
              local customisations into, say $HOME/.vimoutlinerrc, you'll
              probably have to merge the backup with the new file by hand.
-            
+
 
         Manual method                                 *vo-manual-install*
 
@@ -110,11 +110,11 @@ INSTALLING AND TESTING VIMOUTLINER                           *vo-install*
             tarball into their destination folders by yourself. The
             following steps are a description of what has to go where
             and assume some knowledge of your vim setup.
-            
+
             If you encounter problems, please contact the mailinglist
             for an immediate solution and more complete future
             documentation. www.lists.vimoutliner.org
-            
+
             If you want to setup VimOutliner on a system running Microsoft
             Windows, the directory $HOME denotes the base folder of the
             vim installation.  If you're on Unix based system, $HOME
@@ -152,7 +152,7 @@ INSTALLING AND TESTING VIMOUTLINER                           *vo-install*
             Your $HOME/.vim/ftplugin/vo_base.vim file should contain
             the lines
                  runtime! ftdetect/*.vim
-                
+
             Finally, you need to integrate the online help provided
             with VimOutliner into the vim help system.  Start vim
             and execute the following command:
@@ -160,10 +160,10 @@ INSTALLING AND TESTING VIMOUTLINER                           *vo-install*
 
             At this point, VimOutliner should be functional.
             Type "help vo" to get started.
-            
+
     Color Schemes                                              *vo-color*
-   
-            Color schemes specify the colors Vim Outliner uses when 
+
+            Color schemes specify the colors Vim Outliner uses when
         displaying an outline. Colors are specified by object and level.
         These objects currently include: headings, body text, pre-
         formatted body text, tables and others. See |vo-objects| for
@@ -176,14 +176,14 @@ INSTALLING AND TESTING VIMOUTLINER                           *vo-install*
 
         To override the default color scheme you can edit these lines
         in your $HOME/.vimoutlinerrc file:
-        
+
             "Custom Colors **********************************
-            " Uncomment this next line to force using VO on 
+            " Uncomment this next line to force using VO on
             " a light background
-            " colorscheme vo_light 
-            " Uncomment this next line to force using VO on 
+            " colorscheme vo_light
+            " Uncomment this next line to force using VO on
             " a dark background
-            " colorscheme vo_dark 
+            " colorscheme vo_dark
 
         To create your own scheme follow these simple steps:
 
@@ -192,7 +192,7 @@ INSTALLING AND TESTING VIMOUTLINER                           *vo-install*
 
             2. Make a copy of one of the included schemes to use
                as a starting point. You should be able to find them
-               in places like: $HOME/.vim/colors and 
+               in places like: $HOME/.vim/colors and
                /usr/share/vim/vim63/colors. Put the copy in your
                own colors directory ($HOME/.vim/colors)
 
@@ -239,9 +239,9 @@ INSTALLING AND TESTING VIMOUTLINER                           *vo-install*
         In $HOME/vo_test.otl
             Cursor to the _tag_newfile marker
             Press Ctrl+K
-                You should be brought to $HOME/vo_newfile.otl 
+                You should be brought to $HOME/vo_newfile.otl
             Press Ctrl+N
-                You should be brought back to $HOME/vo_test.otl 
+                You should be brought back to $HOME/vo_test.otl
             Note:
                 Ctrl+K is a VimOutliner synonym for Ctrl+]
                 Ctrl+N is a VimOutliner synonym for Ctrl+T
@@ -263,7 +263,7 @@ USING VIMOUTLINER ON OTHER FILE TYPES                    *vo-other-files*
              VimOutliner. As of VimOutliner 0.3.0, the ol script is no
              longer necessary nor provided. Instead, VimOutliner is now a
              Vim plugin, so Vim does all the work.
-            
+
              This makes VimOutliner much simpler to use in most cases,
              but Vim plugins are file extension based, meaning that if
              you want to use VimOutliner on a file extension other than
@@ -316,7 +316,7 @@ VIMOUTLINER PHILOSOPHY                                    *vo-philosophy*
         features as Grandview, More, Thinktank, Ecco, etc. Features
         include tree expand/collapse, tree promotion/demotion, level
         sensitive colors, interoutline linking, and body text.
-        
+
         What sets VimOutliner apart from the rest is that it's been
         constructed from the ground up for fast and easy authoring.
         Keystrokes are quick and easy, especially for someone knowing the
@@ -324,7 +324,7 @@ VIMOUTLINER PHILOSOPHY                                    *vo-philosophy*
         to the extent that Vim supports the mouse). Many of the
         VimOutliner commands start with a double comma because that's
         very quick to type.
-        
+
         Many outliners are prettier than VimOutliner. Most other
         outliners are more intuitive for the newbie not knowing Vim. Many
         outliners are more featureful than VimOutliner (although
@@ -332,7 +332,7 @@ VIMOUTLINER PHILOSOPHY                                    *vo-philosophy*
         Some outliners are faster on lookup than VimOutliner. But as far
         as we know, NO outliner is faster at getting information out of
         your mind and into an outline than VimOutliner.
-        
+
         VimOutliner will always give you lightning fast authoring. That's
         our basic, underlying philosophy, and will never change, no
         matter what features are added.
@@ -341,17 +341,17 @@ VIMOUTLINER PHILOSOPHY                                    *vo-philosophy*
         Earlier VimOutliner versions prided themselves on being
         standalone applications, self-contained in a single directory
         with a special script to run everything.
-        
+
         As of 0.3.0, VimOutliner is packaged as a Vim Plugin, eliminating
         the need for the ol script, which many saw as clumsy. Given that
         all VimOutliner features are produced by the Vim engine, it makes
         perfect sense to admit that VimOutliner is an add-on to Vim.
-        
+
         Therefore VimOutliner now prides itself in being a Vim plugin.
         With the VimOutliner package installed, the Vim editor yields the
         VimOutliner feature set for files whose extensions are listed as
         vo_base types in $HOME/.vim/ftplugin/vo_base.vim.
-        
+
         The Vim Plugin philosophy yields several benefits:
             Less reliance on Perl, bash and environment vars
             (upcoming) Portability between Linux, Windows and Mac
@@ -367,13 +367,13 @@ RUNNING VIMOUTLINER                                          *vo-running*
             characterwise, moving between command and insert modes, use
             of Visual Mode selections,and reformatting, you should be
             well equipped to use VimOutliner.
-            
+
             VimOutliner is a set of Vim scripts and configurations. Its
             features all come from the Vim editor's engine. If you do not
             know Vim, you'll need to learn the Vim basics before using
             VimOutliner. Start by taking the Vim tutorial. The tutorial
             should take about 2 hours.
-            
+
             VimOutliner is so fast, that if you often use outlining,
             you'll make up that time within a week.
 
@@ -388,7 +388,7 @@ RUNNING VIMOUTLINER                                          *vo-running*
             accessed through keyboard commands starting with 2 commas.
             The double comma followed by a character is incredibly fast
             to type.
-            
+
             We expect to create more comma comma commands, so try not to
             create your own, as they may clash with later comma comma
             commands. If you have an exceptionally handy command, please
@@ -505,16 +505,16 @@ RUNNING VIMOUTLINER                                          *vo-running*
                 The space before the exclamation point is a MUST.
 
     Menu                                                        *vo-menu*
-    
+
 	There is a simple menu included in Vim Outliner when running
 	in GUI mode. Named 'VO', you can usually find it right next to the
-	'Help' menu. There are commands to change the fold level and select 
+	'Help' menu. There are commands to change the fold level and select
 	alternate color schemes. There is also entries for common tools.
 	Currently there are only two entries for running the otl2html.py
-	script included with VO. 
-	
-	The first otl2html.py tool item executes the script with default 
-	options. The only control a user has it to modify the nnnnnn.css 
+	script included with VO.
+
+	The first otl2html.py tool item executes the script with default
+	options. The only control a user has it to modify the nnnnnn.css
 	file.
 
 	The second tool item calls a shell script, 'myotl2html.sh'. This
@@ -522,7 +522,7 @@ RUNNING VIMOUTLINER                                          *vo-running*
 	releases. A sample myotl2html.sh script might look like this:
 
 	#!/bin/bash
-	otl2html.py -S pjtstat.css $1 > $HOME/public_html/$1.html 
+	otl2html.py -S pjtstat.css $1 > $HOME/public_html/$1.html
 
 	If you have several different types of reports you create regularly,
 	you can create your own menu entries. Just add lines like these to
@@ -535,10 +535,10 @@ RUNNING VIMOUTLINER                                          *vo-running*
 	I'm sure you get the idea.
 
     Vim Outliner Objects                                     *vo-objects*
-            
+
         There are several object/line types that VO supports. The most
         common on simple headings and body text. Simple headings are
-        tab-indented line that start with any non-whitespace character 
+        tab-indented line that start with any non-whitespace character
         except: : ; | < >. These characters specify other objects. Here
         is a list of each of the non-heading types:
             :        body text (wrapping)
@@ -546,12 +546,12 @@ RUNNING VIMOUTLINER                                          *vo-running*
             |        table
             >        user-defined, text block (wrapping)
             <        user-defined, preformatted text block (non-wrapping)
-        
+
         The body text marker, :, is used to specify lines that are
         automatically wrapped and reformatted. VO and post-processors are
         free to wrap and reformat this text as well as use proportionally-
         spaced fonts. A post-processor will probably change the appearance
-	of what you have written. If you are writing a book or other 
+	of what you have written. If you are writing a book or other
 	document, most of the information you enter will be body text.
 
         Here is an example:
@@ -563,31 +563,31 @@ RUNNING VIMOUTLINER                                          *vo-running*
 		:
 		: His breeding is unknown. He appears to be a mix between
 		: a german shepherd and a collie.
-	
+
 	When folded, body text looks something like this:
 
 	    Kirby the Wonder Dog
 		[TEXT] -------------------------------- (6 lines)
-	
+
 	The preformatted text marker, ;, is used to mark text that should
 	not be reformatted nor wrapped by VO or any post-processor. A post-
-	processor would use a fixed-space font, like courier, to render 
-	these lines. A post-processor will probably not change the 
-	appearance of what you have written. This is useful for making text 
+	processor would use a fixed-space font, like courier, to render
+	these lines. A post-processor will probably not change the
+	appearance of what you have written. This is useful for making text
 	picture, program code or other format-dependent text.
 
 	Here is an example:
 
 	    Output waveform
 		;         _______                ______
-		;   _____/       \______________/     
+		;   _____/       \______________/
 		;        |-10us--|----35us------|
-	
+
 	When folded, preformatted body text looks something like this:
 
 	    Output waveform
 		[TEXT BLOCK] -------------------------- (6 lines)
-	
+
 	The table marker, |, is used to create tables. This is an excellent
 	way to show tabular data. The marker is used as if it were are real
 	vertical line. A || (double-|) is optionally used to mark a table
@@ -600,20 +600,20 @@ RUNNING VIMOUTLINER                                          *vo-running*
 			| Kirby  |   9 |    dog |           both |
 			| Hoover |   1 |    dog |           both |
 			| Sophia |   9 |    cat |         inside |
-	
+
 	There is no automatic alignment of columns yet. It must be done
 	manually. The post-processor, otl2thml.py, does have alignment
 	functions. See its documentation for more information.
-	
+
 	When folded, a table looks something like this:
 
 	    Pets
 		[TABLE] ------------------------------- (4 lines)
-	
+
 	User-defined text is similar to body text but more flexible and it's
-	use is not pre-defined by Vim Outliner. The basic, user-defined 
-	text block marker, >, behaves just like body text. 
-		
+	use is not pre-defined by Vim Outliner. The basic, user-defined
+	text block marker, >, behaves just like body text.
+
         For example:
 
 	    Kirby the Wonder Dog
@@ -623,110 +623,110 @@ RUNNING VIMOUTLINER                                          *vo-running*
 		>
 		> His breeding is unknown. He appears to be a mix between
 		> a german shepherd and a collie.
-	
+
 	When folded, body text looks something like this:
 
 	    Kirby the Wonder Dog
 		[USER] -------------------------------- (6 lines)
-	
+
 	But unlike body text, user-defined text can be expanded. You could
-	have user-defined text types. If you were writing a book, in 
-	addition to body text for paragraphs you might need special 
-	paragraphs for tips and warnings. User-defined text blocks can 
+	have user-defined text types. If you were writing a book, in
+	addition to body text for paragraphs you might need special
+	paragraphs for tips and warnings. User-defined text blocks can
 	accomplish this:
 
 		>Tips
-		> Don't forget to back up your computer daily. You don't 
-		> need to back up the entire computer. You just need to 
+		> Don't forget to back up your computer daily. You don't
+		> need to back up the entire computer. You just need to
 		> backup up the files that have changed.
 		>Warning
-		>Never store you backup floppy disks on the side of you 
+		>Never store you backup floppy disks on the side of you
 		>file cabinets by adhering them with magnets.
-		
-	A post processor will know how to remove the style tags (Tips and 
+
+	A post processor will know how to remove the style tags (Tips and
 	Warning) and you want the text to be formatted.
 
 	When folded, the above would appear as:
 
 		[USER Tips] --------------------------- (4 lines)
 		[USER Warning]------------------------- (3 lines)
-	
+
 	The user-defined, preformatted text block marker, <, behaves just
 	like preformatted text. But like >, it leaves the functional
-	definition up to the user. A simple user-defined, preformatted text 
+	definition up to the user. A simple user-defined, preformatted text
 	block could be:
 
 	    Tux
-		<                 _.._                   
-		<              .-'    `-.                
-		<             :          ;               
-		<             ; ,_    _, ;               
-		<             : \{"  "}/ :               
-		<            ,'.'"=..=''.'.              
-		<           ; / \      / \ ;             
-		<         .' ;   '.__.'   ; '.           
-		<      .-' .'              '. '-.        
-		<    .'   ;                  ;   '.      
-		<   /    /                    \    \     
-		<  ;    ;                      ;    ;    
-		<  ;   `-._                  _.-'   ;    
-		<   ;      ""--.        .--""      ;     
-		<    '.    _    ;      ;    _    .'      
-		<    {""..' '._.-.    .-._.' '..""}      
-		<     \           ;  ;           /       
-		<      :         :    :         :        
-		<      :         :.__.:         :        
-		<       \       /"-..-"\       /    fsc  
-		<        '-.__.'        '.__.-'          
+		<                 _.._
+		<              .-'    `-.
+		<             :          ;
+		<             ; ,_    _, ;
+		<             : \{"  "}/ :
+		<            ,'.'"=..=''.'.
+		<           ; / \      / \ ;
+		<         .' ;   '.__.'   ; '.
+		<      .-' .'              '. '-.
+		<    .'   ;                  ;   '.
+		<   /    /                    \    \
+		<  ;    ;                      ;    ;
+		<  ;   `-._                  _.-'   ;
+		<   ;      ""--.        .--""      ;
+		<    '.    _    ;      ;    _    .'
+		<    {""..' '._.-.    .-._.' '..""}
+		<     \           ;  ;           /
+		<      :         :    :         :
+		<      :         :.__.:         :
+		<       \       /"-..-"\       /    fsc
+		<        '-.__.'        '.__.-'
 
 	When folded it would be:
 
 	    Tux
 		[USER BLOCK] -------------------------- (6 lines)
 
-	Like user-defined text, these blocks can be given user-defined 
+	Like user-defined text, these blocks can be given user-defined
 	styles. For example:
 
 		<ASCIIart
-		<                 _.._                   
-		<              .-'    `-.                
-		<             :          ;               
-		<             ; ,_    _, ;               
-		<             : \{"  "}/ :               
-		<            ,'.'"=..=''.'.              
-		<           ; / \      / \ ;             
-		<         .' ;   '.__.'   ; '.           
-		<      .-' .'              '. '-.        
-		<    .'   ;                  ;   '.      
-		<   /    /                    \    \     
-		<  ;    ;                      ;    ;    
-		<  ;   `-._                  _.-'   ;    
-		<   ;      ""--.        .--""      ;     
-		<    '.    _    ;      ;    _    .'      
-		<    {""..' '._.-.    .-._.' '..""}      
-		<     \           ;  ;           /       
-		<      :         :    :         :        
-		<      :         :.__.:         :        
-		<       \       /"-..-"\       /    fsc  
-		<        '-.__.'        '.__.-'          
+		<                 _.._
+		<              .-'    `-.
+		<             :          ;
+		<             ; ,_    _, ;
+		<             : \{"  "}/ :
+		<            ,'.'"=..=''.'.
+		<           ; / \      / \ ;
+		<         .' ;   '.__.'   ; '.
+		<      .-' .'              '. '-.
+		<    .'   ;                  ;   '.
+		<   /    /                    \    \
+		<  ;    ;                      ;    ;
+		<  ;   `-._                  _.-'   ;
+		<   ;      ""--.        .--""      ;
+		<    '.    _    ;      ;    _    .'
+		<    {""..' '._.-.    .-._.' '..""}
+		<     \           ;  ;           /
+		<      :         :    :         :
+		<      :         :.__.:         :
+		<       \       /"-..-"\       /    fsc
+		<        '-.__.'        '.__.-'
 		<Code
 		< getRXDN macro
-		< 
+		<
 		< 	local	gRXD1, gRXD2
 		< 	bcf	STATUS,C
 		< 	btfsc	FLAGS,SERPOL
-		< 
+		<
 		< 	goto	gRXD1
 		< 	btfsc	RXDN
 		< 	bsf	STATUS,C
 		< 	goto	gRXD2
-		< 
+		<
 		< gRXD1	btfss	RXDN
 		< 	bsf	STATUS,C
 		< 	nop
 		< gRXD2
 		< 	endm
-	
+
 	When folded, the above would appear as:
 
 		[USER BLOCK ASCIIart] ----------------- (22 lines)
@@ -734,16 +734,16 @@ RUNNING VIMOUTLINER                                          *vo-running*
 
     Vim Outliner Post-processors                     *vo-post-processors*
 
-	There are already serveral post processors for Vim Outliner. Some 
-	are general purpose in nature and others perform specific 
+	There are already serveral post processors for Vim Outliner. Some
+	are general purpose in nature and others perform specific
 	conversions. Here is list of currently know programs:
 
 	Node.pm		Steve Litt    www.troubleshooters.com/projects/Node
-            
-			This program is general purpose in nature and can 
-			generate many types of output. It can even output 
+
+			This program is general purpose in nature and can
+			generate many types of output. It can even output
 			complete keyboarder-friendly menu scripts (EDML
-			www.troubleshooters.com/projects/edml). See the 
+			www.troubleshooters.com/projects/edml). See the
 			website for more details.
 
 	otl2docbook.pl	Christian Warden     www.vimoutliner.org  Downloads
@@ -751,34 +751,34 @@ RUNNING VIMOUTLINER                                          *vo-running*
 			This perl script converts OTL files to DocBook.
 
 	otl2html.py	Noel Henson	included with Vim Outliner
-			This python script outputs html pages, one page per 
-			OTL file. It is useful for creating pretty reports 
-			and nicely formatted, but simple, web pages. See 
+			This python script outputs html pages, one page per
+			OTL file. It is useful for creating pretty reports
+			and nicely formatted, but simple, web pages. See
 			the help (otl2thml.py --help) for more detail.
 
 	otl2ooimpress   Noel Henson          www.vimoutliner.org  Downloads
 
-			A very simple script to output Open Office Impress 
+			A very simple script to output Open Office Impress
 			files.
 
 	otl2pdb.pl	Gabriel Horner       www.vimoutliner.org  Downloads
 
-			A perl script to convert contact information in VO 
+			A perl script to convert contact information in VO
 			to Palm pdb files.
 
 	vo2html.py	Ricardo Cardenes     www.vimoutliner.org  Downloads
 
-			Converts an OTL file to a set of html 'slides'. It 
+			Converts an OTL file to a set of html 'slides'. It
 			supports used-defined templates.
 
-	otl_handler	Mahlon E. Smith  www.martini.nu/misc/otl_hander.tgz   
+	otl_handler	Mahlon E. Smith  www.martini.nu/misc/otl_hander.tgz
 
-			Not a converter really, but a mod_perl script that 
-			enables Apache to show VO todo lists in 
-			a nicely-formatted way. Folding of sections and CSS 
+			Not a converter really, but a mod_perl script that
+			enables Apache to show VO todo lists in
+			a nicely-formatted way. Folding of sections and CSS
 			is supported.
-			
-	This list is likely to be out of date. Please check the Vim 
+
+	This list is likely to be out of date. Please check the Vim
 	Outliner website for more.
 
 -------------------------------------------------------------------------
@@ -790,21 +790,21 @@ ADVANCED VIMOUTLINER                                        *vo-advanced*
 
     Executable Lines                                *vo-executable-lines*
 
-    Executable lines enable you to launch any command from a specially 
-    constructed headline within VimOutliner. The line must be constructed 
+    Executable lines enable you to launch any command from a specially
+    constructed headline within VimOutliner. The line must be constructed
     like this:
- 
+
         Description _exe_ command
 
     Here's an example to pull up Troubleshooters.Com:
- 
+
         Troubleshooters.Com _exe_ mozilla http://www.troubleshooters.com
 
-    Executable lines offer the huge benefit of a single-source knowledge 
-    tree, where all your knowledge, no matter what its format, exists 
-    within a single tree of outlines connected with inter-outline links and 
+    Executable lines offer the huge benefit of a single-source knowledge
+    tree, where all your knowledge, no matter what its format, exists
+    within a single tree of outlines connected with inter-outline links and
     executable lines.
- 
+
  To enable this behavior, insert the following code into your $HOME/.vimoutlinerrc file:
 -------------------------------------------------------------------------
 PLUGINS                                                      *vo-plugins*
@@ -880,7 +880,7 @@ PLUGINS                                                      *vo-plugins*
                            Napkins
                            Trash Containers
                2. Add the check boxes
-                  This can be done by visually selecting them and typing 
+                  This can be done by visually selecting them and typing
                   ,,cb.  When done, you should see this:
 
                    [_] Barbeque
@@ -911,9 +911,9 @@ PLUGINS                                                      *vo-plugins*
                            [_] Trash Containers
 
                3. Now check off what's done
-                  Checking off what is complete is easy with the ,,cx 
-                  command.  Just place the cursor on a heading and ,,cx 
-                  it. Now you can see what's done as long as the outline 
+                  Checking off what is complete is easy with the ,,cx
+                  command.  Just place the cursor on a heading and ,,cx
+                  it. Now you can see what's done as long as the outline
                   is fully expanded.
 
                    [_] Barbeque
@@ -946,12 +946,12 @@ PLUGINS                                                      *vo-plugins*
            4. Getting more advanced
                Now summarize what's done.
 
-                You can summarize what is done with the ,,cz command. 
-                Place the cursor on the 'Barbeque' heading and ,,cz it. 
-                The command will recursively process the outline and 
-                update the check boxes of the parent headlines. You 
-                should see: 
-                   (Note: the only change is on the 'Guests' heading. It 
+                You can summarize what is done with the ,,cz command.
+                Place the cursor on the 'Barbeque' heading and ,,cz it.
+                The command will recursively process the outline and
+                update the check boxes of the parent headlines. You
+                should see:
+                   (Note: the only change is on the 'Guests' heading. It
                    changed because all of its children are complete.)
 
                    [_] Barbeque
@@ -982,9 +982,9 @@ PLUGINS                                                      *vo-plugins*
                            [X] Trash Containers
 
                Add percentages for a better view
-                   You can get a much better view of what's going on, 
-                   especially with collapsed headings, if you add 
-                   percentages. Place a % on each heading that has children 
+                   You can get a much better view of what's going on,
+                   especially with collapsed headings, if you add
+                   percentages. Place a % on each heading that has children
                    like this:
 
                    [_] % Barbeque
@@ -1015,9 +1015,9 @@ PLUGINS                                                      *vo-plugins*
                            [X] Trash Containers
 
                Now compute the percentage of completion
-                   After adding the % symbols, place the cursor on the 
-                   'Barbeque' heading and execute ,,cz as before. Keep in 
-                   mind that the recursive percentages are weighted. You 
+                   After adding the % symbols, place the cursor on the
+                   'Barbeque' heading and execute ,,cz as before. Keep in
+                   mind that the recursive percentages are weighted. You
                    should see:
 
                    [_] 58% Barbeque
@@ -1050,10 +1050,10 @@ PLUGINS                                                      *vo-plugins*
                Complete a few more just for fun
 
                    Mark Salad and Soda and you should see the ouline below.
-                  
-                   Try plaing around with zc and zo to see the effects of 
-                   opening and closing folds. Even if you place the cursor 
-                   on 'Barbeque' and zo it, you still have a good 
+
+                   Try plaing around with zc and zo to see the effects of
+                   opening and closing folds. Even if you place the cursor
+                   on 'Barbeque' and zo it, you still have a good
                    understanding of how complete the project is.
 
                    [_] 69% Barbeque
@@ -1153,11 +1153,11 @@ OTHER INFORMATION                                         *vo-other-info*
 
         How do I contribute to VimOutliner
             Step 1 is to subscribe to our mailing list. Join up at
-            http://www.lists.vimoutliner.org/. Lurk for a few days or so 
-            to get the feel, then submit your idea/suggestion. A lively 
-            discussion will ensue, after which your idea, probably in 
-            some modified form, will be considered. The more of the actual 
-            work you have done, the more likely your feature will go in 
+            http://www.lists.vimoutliner.org/. Lurk for a few days or so
+            to get the feel, then submit your idea/suggestion. A lively
+            discussion will ensue, after which your idea, probably in
+            some modified form, will be considered. The more of the actual
+            work you have done, the more likely your feature will go in
             the distribution in a
             timely manner.
 
@@ -1166,7 +1166,7 @@ OTHER INFORMATION                                         *vo-other-info*
             requires them to have a different name. A few older files
             from previous versions break this rule, but over time these
             will be changed to our naming convention.
-            
+
             In the old days, with the "self contained" philosophy, there
             was no naming convention, because VimOutliner files were
             segregated into their own tree. With the coming of the "vim
@@ -1176,13 +1176,13 @@ OTHER INFORMATION                                         *vo-other-info*
 
         What if my feature doesn't make it into the VimOutliner distribution?
             You can offer it Extra-Distro, either on your own website, or
-            very possibly on the VimOutliner home page, www.vimoutliner.org.  
-            VimOutliner ships with its core features, but many additional 
-            functionalities, especially those that operate from Perl scripts 
-            (or bash or python) are available outside the distro. For 
-            instance, right now there's an Executable Line feature that turns 
-            VimOutliner into a true single tree information reservoir. The 
-            Executable Line feature is available extra-distro on the 
+            very possibly on the VimOutliner home page, www.vimoutliner.org.
+            VimOutliner ships with its core features, but many additional
+            functionalities, especially those that operate from Perl scripts
+            (or bash or python) are available outside the distro. For
+            instance, right now there's an Executable Line feature that turns
+            VimOutliner into a true single tree information reservoir. The
+            Executable Line feature is available extra-distro on the
             VimOutliner home page.
 
     Anticipated improvements in later versions
@@ -1202,7 +1202,7 @@ OTHER INFORMATION                                         *vo-other-info*
             friendly features. But then, they're Windows users: let them
             use the mouse.
         Headline to headline links
-            Not yet sanctioned, might never be implemented 
+            Not yet sanctioned, might never be implemented
             If implemented, this would presumably create links not just
             between outlines, but between headlines, either in the same
             outline or in a different one. This would be a start on
@@ -1217,7 +1217,7 @@ OTHER INFORMATION                                         *vo-other-info*
             Main distribution website
         http://www.troubleshooters.com/tpromag/199911/199911.htm
             Outlining discussion, not product specific
-        http://www.troubleshooters.com/linux/olvim.htm 
+        http://www.troubleshooters.com/linux/olvim.htm
             Discussion on how to use Vim for outlining
         http://www.troubleshooters.com/projects/vimoutliner.htm
             Former Webpage for the VimOutliner distro

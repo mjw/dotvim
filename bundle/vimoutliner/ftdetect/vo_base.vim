@@ -26,13 +26,13 @@
 "#      Set of outliner friendly settings
 "# Steve Litt, 5/28/2001
 "# End of version 0.1.0
-"# 
+"#
 "#  V0.1.1 Pre-alpha
 "#      No change
-"# 
+"#
 "# Steve Litt, 5/28/2001
 "# End of version 0.1.1
-"# 
+"#
 "#  V0.1.2 Pre-alpha
 "# 	No Change
 "# Steve Litt, 5/30/2001
@@ -41,14 +41,14 @@
 "# 	No Change
 "# Steve Litt, 5/30/2001
 "# End of version 0.1.3
-"#  V0.2.0 
+"#  V0.2.0
 "# 	Noel Henson adds code for outliner-friendly expand and
 "# 	collapse, comma comma commands, color coding, hooks for a
 "# 	spellchecker, sorting, and date insertion.
 "# Noel Henson, 11/24/2002
 "# End of version 0.2.0
 "# END OF HISTORY
-"# 
+"#
 "# #######################################################################
 "filetype.vim
 "http://www.troubleshooters.com/projects/vimoutliner

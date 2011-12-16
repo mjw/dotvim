@@ -34,7 +34,7 @@ endif
 
 " Special characters in a filename that are not acceptable in a filename (as a
 "   window title) on windows.
-let s:specialChars = '\([*:?"<>|]\)' 
+let s:specialChars = '\([*:?"<>|]\)'
 let s:specialCharsMap = {
       \   '*': 'S',
       \   ':': 'C',
@@ -236,9 +236,9 @@ let s:haveItemHandler = "s:OpenFile"
 
 " Define handlers for built-in commands. These have no arguments, they will
 "   use the existing parsed command-line vars. Set s:errCode on errors.
-let s:builtinCmdHandler{'vdiff'} = 's:VDiffHandler' 
-let s:builtinCmdHandler{'vdiff2'} = 's:VDiff2Handler' 
-let s:builtinCmdHandler{'exec'} = 's:ExecHandler' 
+let s:builtinCmdHandler{'vdiff'} = 's:VDiffHandler'
+let s:builtinCmdHandler{'vdiff2'} = 's:VDiff2Handler'
+let s:builtinCmdHandler{'exec'} = 's:ExecHandler'
 
 let s:vdiffCounter = 0
 
@@ -1028,7 +1028,7 @@ function! s:PHelpComplete(ArgLead, CmdLine, CursorPos)
           \ "simple\ncommands\nenvironment\nfiletypes\njobview\nrevisions\n".
           \ "usage\nviews\n"
 endfunction
- 
+
 " Handler for opened command.
 function! s:OpenFile(scriptOrigin, outputType, fileName) " {{{
   if filereadable(a:fileName)
@@ -1280,7 +1280,7 @@ function! s:SetupFileBrowse() " {{{
   command! -buffer -nargs=0 PFileSync :call perforce#PFIF(1, 2, 'sync',
         \ <SID>GetCurrentItem())
   nnoremap <silent> <buffer> S :PFileSync<CR>
-  command! -buffer -nargs=0 PFileChange :call perforce#PFIF(0, 0, 'change', 
+  command! -buffer -nargs=0 PFileChange :call perforce#PFIF(0, 0, 'change',
         \ <SID>GetCurrentChangeNumber(line(".")))
   nnoremap <silent> <buffer> C :PFileChange<CR>
   command! -buffer -nargs=0 PFileLaunch :call <SID>LaunchCurrentFile()
@@ -1608,7 +1608,7 @@ endfunction
 " The commandName may not be the perforce command when it is not of script
 "   origin (called directly from a command), but it should be always command
 "   name, when it is script origin.
-" scriptOrigin: An integer indicating the origin of the call. 
+" scriptOrigin: An integer indicating the origin of the call.
 "   0 - Originated directly from the user, so should redirect to the specific
 "       command handler (if exists), after some basic processing.
 "   1 - Originated from the script, continue with the full processing (makes
@@ -1649,7 +1649,7 @@ function! perforce#PFrangeIF(fline, lline, scriptOrigin, outputType,
       return s:{s:p4Command}Hdlr(1, s:outputType, a:commandName)
     endif
   endif
- 
+
   let modifyWindowName = 0
   let dontProcess = (index(s:p4Options, '++n') != -1)
   let noDefaultArg = (index(s:p4Options, '++N') != -1)
@@ -1735,7 +1735,7 @@ function! perforce#PFrangeIF(fline, lline, scriptOrigin, outputType,
     endif
 
     if branchModifierSpecified
-      call map(s:p4Arguments, 
+      call map(s:p4Arguments,
             \ '(v:val =~ unprotectedAmp ? s:ApplyBranchSpecs(v:val, unprotectedAmp) : v:val)')
     endif
     " Unescape them, as user is required to escape them to avoid the above
@@ -1768,7 +1768,7 @@ function! perforce#PFrangeIF(fline, lline, scriptOrigin, outputType,
     " Use simple window name for all the help commands.
     let s:p4WinName = s:helpWinName
   elseif modifyWindowName
-    let s:p4WinName = s:MakeWindowName() 
+    let s:p4WinName = s:MakeWindowName()
   endif
 
   " If the command is a built-in command, then don't pass it to external p4.
@@ -1793,7 +1793,7 @@ function! perforce#PFrangeIF(fline, lline, scriptOrigin, outputType,
       let specMode = 1
     endif
   endif
-  
+
   let navigateCmd = 0
   if index(s:navigateCmds, s:p4Command) != -1
     let navigateCmd = 1
@@ -2465,7 +2465,7 @@ function! s:InitWindow(p4Options)
     call genutils#SilentSubstitute("\<CR>$", '%s///e')
     setlocal nomodifiable
     setlocal nomodified
- 
+
     if s:outputType == 1
       wincmd p
     endif
@@ -2568,7 +2568,7 @@ function! s:GetP4Options()
     let s:p4User = p4User
     let s:p4Port = p4Port
   endtry
-  
+
   return addOptions
 endfunction
 
@@ -3223,7 +3223,7 @@ endfunction
 " This better take the line as argument, but I need the context of current
 "   buffer contents anyway...
 " I don't need to handle other revision specifiers here, as I won't expect to
-"   see them here (perforce converts them to the appropriate revision number). 
+"   see them here (perforce converts them to the appropriate revision number).
 function! s:GetCurrentDepotFile(lineNo)
   " Local submissions.
   let fileName = ""
@@ -3678,7 +3678,7 @@ call perforce#ToggleCheckOutPrompt(0)
 endfunction " s:Initialize }}}
 
 """ END: Infrastructure }}}
- 
+
 " Do some initializations.
 if g:p4DefaultPreset != -1 &&
       \ g:p4DefaultPreset.'' !~# s:EMPTY_STR

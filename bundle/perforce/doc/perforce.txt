@@ -2238,7 +2238,7 @@ missed some changes.
     - On Windows, allow execution of commands containing filename special
       characters by replacing them with a [x] sequence. They are mapped as,
 >
-          '*' -> [S], 
+          '*' -> [S],
           ':' -> [C],
           '?' -> [Q],
           '"' -> [D],

@@ -1,8 +1,8 @@
 " Vim compiler file for Python
 " Compiler:     Style checking tool for Python
 " Maintainer:   Oleksandr Tymoshenko <gonzo@univ.kiev.ua>
-" Last Change:  2009 Apr 19 
-" Version:      0.5 
+" Last Change:  2009 Apr 19
+" Version:      0.5
 " Contributors:
 "     Artur Wroblewski
 "     Menno
@@ -65,7 +65,7 @@ if exists(":CompilerSet") != 2          " older Vim always used :setlocal
 endif
 
 " We should echo filename because pylint truncates .py
-" If someone know better way - let me know :) 
+" If someone know better way - let me know :)
 CompilerSet makeprg=(echo\ '[%]';\ pylint\ -r\ y\ %)
 
 " We could omit end of file-entry, there is only one file
@@ -84,7 +84,7 @@ function! Pylint(writing)
     if !a:writing && &modified
         " Save before running
         write
-    endif	
+    endif
 
     if has('win32') || has('win16') || has('win95') || has('win64')
         setlocal sp=>%s
@@ -121,7 +121,7 @@ function! PylintEvaluation()
             " Only if there is information about previous run
             if l:item.text =~ 'previous run: '
                 let b:pylint_prev_rate = substitute(l:item.text, '.*previous run: '.l:re_rate.'.*', '\1', 'g')
-            endif    
+            endif
         endif
     endfor
 endfunction

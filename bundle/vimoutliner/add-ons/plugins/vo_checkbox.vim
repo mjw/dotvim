@@ -174,7 +174,7 @@ function! SafelyInsertCheckBox()
 endfunction
 "}}}1
 " Safely InsertCheckBoxPercent() {{{1
-" Insert a checkbox and % sign at the beginning of a header without disturbing 
+" Insert a checkbox and % sign at the beginning of a header without disturbing
 " the current folding only if there is no checkbox already.
 function! SafelyInsertCheckBoxPercent()
 	if match(getline("."),"^\t\t*\[<>:;|\]") != -1
@@ -191,8 +191,8 @@ function! SafelyInsertCheckBoxPercent()
 endfunction
 "}}}1
 " Safely InsertCheckBoxPercentAlways() {{{1
-" Insert a checkbox and % sign at the beginning of a header without disturbing 
-" the current folding only if there is no checkbox already. Include the 
+" Insert a checkbox and % sign at the beginning of a header without disturbing
+" the current folding only if there is no checkbox already. Include the
 " checkbox even on childless headings.
 function! SafelyInsertCheckBoxPercentAlways()
 	if match(getline("."),"^\t\t*\[<>:;|\]") != -1
@@ -210,7 +210,7 @@ function! SwitchBox()
    let questa = strridx(getline("."),"[_]")
    let questb = strridx(getline("."),"[X]")
    if (questa != -1) || (questb != -1)
-	   if (questa != -1) 
+	   if (questa != -1)
 	      substitute/\[_\]/\[X\]/
 	   else
 	      substitute/\[X\]/\[_\]/
@@ -224,7 +224,7 @@ function! DeleteCheckbox()
    let questa = strridx(getline("."),"[_]")
    let questb = strridx(getline("."),"[X]")
    if (questa != -1) || (questb != -1)
-	   if (questa != -1) 
+	   if (questa != -1)
 	      substitute/\(^\s*\)\[_\] \(.*\)/\1\2/
 	   else
 	      substitute/\(^\s*\)\[X\] \(.*\)/\1\2/
@@ -252,7 +252,7 @@ function! FindRootParent(line)
 endf
 
 " NewHMD(line) {{{1
-" (How Many Done) 
+" (How Many Done)
 " Calculates proportion of already done work in the subtree
 function! NewHMD(line)
 	let l:done = 0
@@ -274,7 +274,7 @@ function! NewHMD(line)
    else
       if match(getline(a:line),"\\[X\\]") != -1
 	      let l:proportion = 100
-      else 
+      else
 	      let l:proportion = 0
       endif
    endif

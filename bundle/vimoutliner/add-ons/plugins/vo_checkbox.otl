@@ -2,7 +2,7 @@ Checkboxes: vo_checkbox
 What is it?
 	: Checkboxes is a plugin for project, task and list managment. It add an
 	: understanding of check boxes and percentage of task completion to Vim
-	: Outliner. It adds just three tags and six commands. 
+	: Outliner. It adds just three tags and six commands.
 Installation
 	This should already be included in your Vim Outliner package
 	If not, get it
@@ -33,11 +33,11 @@ The Checkbox Commands
 		: included in the standard Vim Outliner plugins.
 	,,cB	Create a check box (even if one exists)
 	,,c%	Create a checkbox and % symbol
-		: This works just like ,,cb but add a % symbol for use in completion 
+		: This works just like ,,cb but add a % symbol for use in completion
 		: calculations.
 	,,cx	Change check box state
 		: If there is a checkbox on the line the cursor is on, change its
-		: state. If it's checked, uncheck it and vice-versa. Then recompute 
+		: state. If it's checked, uncheck it and vice-versa. Then recompute
 		: the completion of the entire branch starting from the root parent.
 	,,cd	Delete a checkbox
 		: Delete the left-most check box on the selected heading(s).

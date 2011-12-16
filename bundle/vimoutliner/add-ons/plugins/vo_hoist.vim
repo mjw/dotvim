@@ -110,7 +110,7 @@ endfunction
 " IsHoistedParent(line) {{{2
 " Return 1 if this line is a parent with hoisted children
 function! IsHoistParent(line)
-	return match(getline(a:line)," __hoist:","") != -1 
+	return match(getline(a:line)," __hoist:","") != -1
 endfunction
 "}}}2
 " FindParent(line) {{{2
@@ -141,7 +141,7 @@ endfunction
 "}}}2
 "}}}2
 " Hoist(line) {{{2
-" Write the offspring of a parent to a new file, open it and remove the 
+" Write the offspring of a parent to a new file, open it and remove the
 " leading tabs.
 function! Hoist(line)
 	let l:parent = FindParent(a:line)
@@ -197,8 +197,8 @@ function! MakeTabString(n)
 endfunction
 "}}}2
 " AddChildren(line) {{{2
-" Add left-justified children to parent. The filename is extracted from the 
-" end of the parent line. The parent is assumed to have no children at this 
+" Add left-justified children to parent. The filename is extracted from the
+" end of the parent line. The parent is assumed to have no children at this
 " point.
 function! AddChildren(line)
 	let l:filename = ExtractHoistFilename(a:line)

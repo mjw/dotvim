@@ -6,7 +6,7 @@
 " Version:     2.1.0
 " Licence: This program is free software; you can redistribute it and/or
 "          modify it under the terms of the GNU General Public License.
-"          See http://www.gnu.org/copyleft/gpl.txt 
+"          See http://www.gnu.org/copyleft/gpl.txt
 
 if !exists("loaded_perforce")
   runtime plugin/perforce.vim

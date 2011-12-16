@@ -98,7 +98,7 @@ let g:tagbar_left = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 
-"showmarks 
+"showmarks
 "let g:showmarks_enable = 0
 let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 

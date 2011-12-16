@@ -6,13 +6,13 @@
 " Version:     4.1.3
 " Licence: This program is free software; you can redistribute it and/or
 "          modify it under the terms of the GNU General Public License.
-"          See http://www.gnu.org/copyleft/gpl.txt 
+"          See http://www.gnu.org/copyleft/gpl.txt
 " Acknowledgements:
 "     See ":help perforce-acknowledgements".
 " Download From:
 "     http://www.vim.org//script.php?script_id=240
 " Usage:
-"     For detailed help, see ":help perforce" or read doc/perforce.txt. 
+"     For detailed help, see ":help perforce" or read doc/perforce.txt.
 "
 " TODO: {{{
 "   - Launch from describe window is not using the local path.
@@ -69,15 +69,15 @@
 "     sorrounded in double-quotes and embedded double-quotes can be easily
 "     passed in by just doubling them.
 "   - I am aware of the following unique ways in which external commands are
-"     executed (not sure if this is same for all of the variations possible: 
+"     executed (not sure if this is same for all of the variations possible:
 "     ":[{range}][read|write]!cmd | filter" and "system()"):
-"     For :! command 
+"     For :! command
 "       On Windoze+native:
 "         cmd /c <command>
 "       On Windoze+sh:
 "         sh -c "<command>"
 "       On Unix+sh:
-"         sh -c (<command>) 
+"         sh -c (<command>)
 "   - By the time we parse arguments, we protect all the back-slashes, which
 "     means that we would never see a single-back-slash.
 "   - Using back-slashes on Cygwin vim is unique and causes E303. This is
@@ -151,7 +151,7 @@ function! s:CondDefSetting(settingName, def)
     let {a:settingName} = a:def
   endif
 endfunction
- 
+
 call s:CondDefSetting('g:p4CmdPath', 'p4')
 call s:CondDefSetting('g:p4ClientRoot', '')
 call s:CondDefSetting('g:p4DefaultListSize', '100')

@@ -8,7 +8,7 @@ OS=`uname`
 
 #BACKUP FILE NAMES
 bext=`date +_%T_%F.old`
-if [ $OS == Linux ] ; then 
+if [ $OS == Linux ] ; then
        backupargs="-bS $bext"
 elif [ $OS == FreeBSD ] ; then
        backupargs="-bB $bext"
@@ -18,7 +18,7 @@ fi
 
 #SOME FUNCTIONS
 function sure? {
-	read -p" (y/N)? " 
+	read -p" (y/N)? "
 	echo
 	test $REPLY = "y" || test $REPLY = "Y"
 }
@@ -38,7 +38,7 @@ function copyfile {
 
 function copydir {
 	files=`ls $1`
-	for i in $files; do 
+	for i in $files; do
 		echo "    installing: $2/$i"
 		install $backupargs $1/$i $2
 	 done
@@ -85,8 +85,8 @@ egrep -lq "syntax[[:space:]]+on" $homedir/.vimrc || \
         { modified=1
 	  echo "syntax on" >> $homedir/.vimrc
 	  }
-if [ $modified -eq 0 ] ; then 
-	echo "    not modified"; 
+if [ $modified -eq 0 ] ; then
+	echo "    not modified";
 else
 	echo "    modifying $homedir/.vimrc"
 fi
@@ -96,7 +96,7 @@ modified=0
 echo checking/creating/modifying $homedir/.vim/filetype.vim
 test -f $homedir/.vim/filetype.vim || \
        { echo "    creating $homedir/.vim/filetype.vim"
-       touch $homedir/.vim/filetype.vim 
+       touch $homedir/.vim/filetype.vim
        }
 egrep -lq "runtime\! ftdetect/\*.vim" $homedir/.vim/filetype.vim || \
        { echo "    modifying $homedir/.vim/filetype.vim"
@@ -126,9 +126,9 @@ cat <<EOT
 Add-ons
     There are optional Vim Outliner plugins to handle hoisting and
     checkboxes and a script to convert a Vim Outliner .otl file
-    to an html file. If installed, they must be enabled in the 
-    .vimoutlinerrc file in your home directory. These files will be 
-    stored in $vodir/plugins and 
+    to an html file. If installed, they must be enabled in the
+    .vimoutlinerrc file in your home directory. These files will be
+    stored in $vodir/plugins and
     $vodir/scripts.
 
 EOT

@@ -26,13 +26,13 @@
 "#      Set of outliner friendly settings
 "# Steve Litt, 5/28/2001
 "# End of version 0.1.0
-"# 
+"#
 "#  V0.1.1 Pre-alpha
 "#      No change
-"# 
+"#
 "# Steve Litt, 5/28/2001
 "# End of version 0.1.1
-"# 
+"#
 "#  V0.1.2 Pre-alpha
 "# 	No Change
 "# Steve Litt, 5/30/2001
@@ -41,14 +41,14 @@
 "# 	No Change
 "# Steve Litt, 5/30/2001
 "# End of version 0.1.3
-"#  V0.2.0 
+"#  V0.2.0
 "# 	Noel Henson adds code for outliner-friendly expand and
 "# 	collapse, comma comma commands, color coding, hooks for a
 "# 	spellchecker, sorting, and date insertion.
 "# Noel Henson, 11/24/2002
 "# End of version 0.2.0
 "# END OF HISTORY
-"# 
+"#
 "#########################################################################
 
 " Level Colors {{{1
@@ -91,7 +91,7 @@ if &background == "light"
 	hi PT8 guifg=darkblue	ctermfg=cyan
 	hi PT9 guifg=darkblue	ctermfg=cyan
 
-	" color for tables 
+	" color for tables
 	hi TA1 guifg=darkviolet	ctermfg=cyan
 	hi TA2 guifg=darkviolet	ctermfg=cyan
 	hi TA3 guifg=darkviolet	ctermfg=cyan
@@ -133,7 +133,7 @@ if &background == "light"
 	hi spellErr gui=underline guifg=darkred cterm=underline ctermfg=darkred
 	hi BadWord gui=underline guifg=darkred cterm=underline ctermfg=darkred
 " Dark background {{{2
-else 
+else
 	hi OL1 guifg=white	ctermfg=white
 	hi OL2 guifg=red	ctermfg=red
 	hi OL3 guifg=lightblue	ctermfg=lightblue
@@ -169,7 +169,7 @@ else
 	hi PT8 guifg=darkblue	ctermfg=cyan
 	hi PT9 guifg=darkblue	ctermfg=cyan
 
-	" color for tables 
+	" color for tables
 	hi TA1 guifg=darkviolet	ctermfg=cyan
 	hi TA2 guifg=darkviolet	ctermfg=cyan
 	hi TA3 guifg=darkviolet	ctermfg=cyan

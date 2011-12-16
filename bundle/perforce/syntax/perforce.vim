@@ -79,7 +79,7 @@ syn match perforceChangeNumber "\%(by change \)\@<=\d\+ \@=" contained
 
 
 " opened, files, have etc.
-" The format of have is different because it contains the local file. 
+" The format of have is different because it contains the local file.
 syn match perforceFilelistLine "^//[^/[:space:]]\+/.*#\d\+ - .*$" contains=perforceDepotFileSpec,perforceLocalFile " have
 syn match perforceFilelistLine "^//[^/[:space:]]\+/.*#\d\+ - \%(branch\|integrate\|edit\|delete\|add\).*$" contains=perforceDepotFileSpec,perforceSubmitType,perforceDefaultSubmitType,perforceChangeNumber " opened, files
 syn match perforceChangeNumber "\%( change \)\@<=\d\+ \@=" contained

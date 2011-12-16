@@ -43,14 +43,14 @@
 # V0.1.2 Pre-alpha
 #	More bug fixes, and facility to create a new outline
 #	file from a tag whose corresponding file doesn't yet
-#	exist.  
+#	exist.
 #Steve Litt, 5/30/2001
 #End of version 0.1.2
 #
 # V0.1.3 Pre-alpha
 #	More bug fixes. This was the first version released
 #	file from a tag whose corresponding file doesn't yet
-#	exist.  
+#	exist.
 #Steve Litt, 6/01/2001
 #End of version 0.1.3
 #
@@ -66,7 +66,7 @@
 # V0.1.2 Pre-alpha
 #	More bug fixes, and facility to create a new outline
 #	file from a tag whose corresponding file doesn't yet
-#	exist.  
+#	exist.
 #Steve Litt, 5/30/2001
 #End of version 0.1.2
 #END OF HISTORY
@@ -91,7 +91,7 @@ sub makeTagFileStartingAt($)
 		die;
 		}
 	my($absoluteFileName) =  deriveAbsoluteFileName(Cwd::cwd(), $_[0]);
-	
+
 	my(%processedFiles) = ();
 	recordFileAsProcessed($absoluteFileName,\%processedFiles);
 	unlink $TAGFILENAME;
@@ -102,7 +102,7 @@ sub makeTagFileStartingAt($)
 sub sortAndDeleteDupsFromTagFile()
 	{
 	my($TEMPTAGFILENAME) = "$ENV{'HOME'}/temptagfile.tag";
-	system("sort $TAGFILENAME | uniq > $TEMPTAGFILENAME"); 
+	system("sort $TAGFILENAME | uniq > $TEMPTAGFILENAME");
 	system("rm $TAGFILENAME");
 	system("mv $TEMPTAGFILENAME $TAGFILENAME");
 	}
@@ -112,7 +112,7 @@ sub process1Outline($$)
 	{
 	my($fileName) = $_[0];
 	my($processedFilesHashRef) = $_[1];
-	
+
 	unless(fileExists($fileName))
 		{
 		makeDirectory($fileName);
@@ -223,7 +223,7 @@ sub getTagsFromFile($)
 			  deriveAbsoluteFileName(getBaseDirectory($_[0]), $1);
 			$tagString = "";
 			}
-		}	
+		}
 	return(%tags);
 	}
 
@@ -267,8 +267,8 @@ sub isAbsoluteFilePath($)
 	}
 
 sub getFileNameOnly($)
-	{ 
-	my($fileString); 
+	{
+	my($fileString);
 	if ($_[0] =~ m/.+\/(.*)$/)
 		{
 		$fileString= $1
@@ -282,7 +282,7 @@ sub getFileNameOnly($)
 	}
 
 sub getBaseDirectory($)
-	{ 
+	{
 	my($dirString) = ($_[0] =~ m/(.+\/).*$/);
 	return $dirString;
 	}
@@ -294,7 +294,7 @@ sub deriveAbsoluteFileName($$)
 	my($passedFileName) = $_[1];
 	unless($baseDirectory =~ m/\/$/)
 		{
-		$baseDirectory= $baseDirectory . "/"; 
+		$baseDirectory= $baseDirectory . "/";
 		}
 	if($passedFileName =~ m/^\//)
 		{
@@ -324,7 +324,7 @@ sub usage()
 	print "\nUsage is:\n";
 	print "otltags topLevelOutlineFileName\n\n";
 	}
-	
+
 
 makeTagFileStartingAt($ARGV[0])
 

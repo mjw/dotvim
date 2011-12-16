@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author: Hari Krishna Dara ( hari_vim at yahoo dot com ) 
+# Author: Hari Krishna Dara ( hari_vim at yahoo dot com )
 # Last Change: 06-Jan-2004 @ 19:07
 # Requires:
 #   - bash or ksh (tested on cygwin and MKS respectively).
@@ -9,7 +9,7 @@
 # Version: 1.1.0
 # Licence: This program is free software; you can redistribute it and/or
 #          modify it under the terms of the GNU General Public License.
-#          See http://www.gnu.org/copyleft/gpl.txt 
+#          See http://www.gnu.org/copyleft/gpl.txt
 usage()
 {
 cat <<END

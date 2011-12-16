@@ -19,7 +19,7 @@ delfunction s:MyScriptId " This is not needed anymore.
 "   plugins) at the time this file is sourced.
 
 " DiffLink {{{
- 
+
 " Open the source line for the current line from the diff.
 function! perforceutils#DiffOpenSrc(preview) " {{{
   let s:EMPTY_STR = perforce#PFEval('s:EMPTY_STR')

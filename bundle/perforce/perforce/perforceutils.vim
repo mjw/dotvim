@@ -6,7 +6,7 @@
 " Version:     1.2.0
 " Licence: This program is free software; you can redistribute it and/or
 "          modify it under the terms of the GNU General Public License.
-"          See http://www.gnu.org/copyleft/gpl.txt 
+"          See http://www.gnu.org/copyleft/gpl.txt
 " NOTE:
 "   - This may not work well if there are multiple diff formats are mixed in
 "     the same file.
@@ -30,7 +30,7 @@ aug P4DiffLink
         \   call perforceutils#SetupDiffLink() |
         \ endif
 aug END
- 
+
 
 " Restore cpo.
 let &cpo = s:save_cpo

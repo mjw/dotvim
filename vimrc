@@ -195,3 +195,10 @@ ca w!! w !sudo tee >/dev/null "%"
 
 " sparkup (move cursor onward to next tag)
 let g:sparkupNextMapping = '<c-x>'
+
+" show trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+" strip trailing whitespace
+nmap <leader>ws :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>

@@ -103,6 +103,9 @@ let g:tagbar_left = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 
+"Tagbar autoload bug (FIXED?)
+"let g:tagbar_updateonsave_maxlines = 5000
+
 "showmarks 
 "let g:showmarks_enable = 0
 let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"

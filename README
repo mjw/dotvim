@@ -15,7 +15,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
 To update submodules at a later date:
 
     cd ~/.vim
-    git submodule foreach git pull
+    git submodule foreach git pull origin master
 
 For jslint to work you need to install node, npm and node-jslint
 
@@ -23,7 +23,7 @@ For jslint to work you need to install node, npm and node-jslint
     npm: http://npmjs.org/
     node-jslint: https://github.com/reid/node-jslint
 
-For solarized color scheme to work in gnome terminal check out 
+For solarized color scheme to work in gnome terminal check out
     http://ethanschoonover.com/solarized
     https://github.com/coolwanglu/gnome-terminal-colors-solarized
 
@@ -55,8 +55,8 @@ Useful key mappings:
 
 Installed Plugins (see .vim/bundle directory, managed by pathogen):
 
-abolish, ack, bufexplorer, fugitive, fuzzyfinder, genutils, gist, gnupg, 
+abolish, ack, bufexplorer, fugitive, fuzzyfinder, genutils, gist, gnupg,
 gsession, gundo, fswitch, jekyll, jslint, L9, nerdcommenter, nerdtree, netrw
 pastie, perforce, perl-support, project, pylint, repeat, scratch,
-searchscope, showmarks, sparkup, speeddating, surround, tagbar, 
-unimpaired, vimoutliner, vim-perl, vim-colors-solarized
+searchscope, showmarks, sparkup, speeddating, surround, tslime, tagbar,
+unimpaired, vimoutliner, vim-perl, vim-pythontextobj, vim-colors-solarized

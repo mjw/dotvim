@@ -155,6 +155,7 @@ let g:Perl_PerlcriticSeverity = 4
 
 "Gundo tree toggle
 nnoremap <leader>ut :GundoToggle<CR>
+let g:gundo_close_on_revert = 1
 
 "local (non-github public) settings
 source ~/.vimrc-local
@@ -177,7 +178,7 @@ nmap <silent> <Leader>ss :FSHere<cr>
 let c_space_errors=1
 
 "force terminal colours
-set t_Co=256
+"set t_Co=256
 
 "buffersaurus
 map ]g :Bsnext<CR>

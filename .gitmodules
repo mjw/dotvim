@@ -76,3 +76,9 @@
 [submodule "bundle/netrw"]
 	path = bundle/netrw
 	url = https://github.com/vim-scripts/netrw.vim.git
+[submodule "bundle/vim-pythontextobj"]
+	path = bundle/vim-pythontextobj
+	url = git://github.com/natw/vim-pythontextobj.git
+[submodule "bundle/tslime"]
+	path = bundle/tslime
+	url = git://github.com/jgdavey/tslime.vim.git

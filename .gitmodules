@@ -58,9 +58,6 @@
 [submodule "bundle/fswitch"]
 	path = bundle/fswitch
 	url = git://github.com/vim-scripts/FSwitch.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/ragtag"]
 	path = bundle/ragtag
 	url = git://github.com/tpope/vim-ragtag.git
@@ -79,3 +76,6 @@
 [submodule "bundle/vim-pythontextobj"]
 	path = bundle/vim-pythontextobj
 	url = git://github.com/natw/vim-pythontextobj.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/skwp/vim-colors-solarized.git

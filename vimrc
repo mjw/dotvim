@@ -186,6 +186,7 @@ map [g :Bsprev<CR>
 
 "vim-pad mappings (\n in insert mode is crazy)
 let g:pad_use_default_mappings = 0
+let g:pad_format = "txt"
 
 nmap <leader>nl :ListPads<CR>
 nmap <leader>nn :OpenPad<CR>

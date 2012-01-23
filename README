@@ -58,5 +58,5 @@ Installed Plugins (see .vim/bundle directory, managed by pathogen):
 abolish, ack, bufexplorer, fugitive, fuzzyfinder, genutils, gist, gnupg,
 gsession, gundo, fswitch, jekyll, jslint, L9, nerdcommenter, nerdtree, netrw
 pastie, perforce, perl-support, project, pylint, repeat, scratch,
-searchscope, showmarks, sparkup, speeddating, surround, tslime, tagbar,
+searchscope, showmarks, sparkup, speeddating, surround, tagbar,
 unimpaired, vimoutliner, vim-perl, vim-pythontextobj, vim-colors-solarized

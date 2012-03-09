@@ -17,6 +17,7 @@ if v:version < '702'
     call add(g:pathogen_disabled, 'L9')
     call add(g:pathogen_disabled, 'gnupg')
 endif
+    call add(g:pathogen_disabled, 'gnupg')
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -200,7 +201,11 @@ let g:sparkupNextMapping = '<c-x>'
 
 " show trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$\| \+\ze\t/
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 " strip trailing whitespace
 nmap <leader>ws :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>

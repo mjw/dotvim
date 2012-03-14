@@ -17,7 +17,6 @@ if v:version < '702'
     call add(g:pathogen_disabled, 'L9')
     call add(g:pathogen_disabled, 'gnupg')
 endif
-    call add(g:pathogen_disabled, 'gnupg')
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -103,6 +102,29 @@ nnoremap <leader>tt :TagbarToggle<cr>
 let g:tagbar_left = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
+
+"Tagbar extra language support
+if executable('jsctags')
+  let g:tagbar_type_javascript = {
+       \'ctagsbin' : '~/utils/bin/jsctags'
+       \ }
+endif
+
+if executable('coffeetags')
+  let g:tagbar_type_coffee = {
+        \ 'ctagsbin' : 'coffeetags',
+        \ 'ctagsargs' : '',
+        \ 'kinds' : [
+        \ 'f:functions',
+        \ 'o:object',
+        \ ],
+        \ 'sro' : ".",
+        \ 'kind2scope' : {
+        \ 'f' : 'object',
+        \ 'o' : 'object',
+        \ }
+        \ }
+endif
 
 "Tagbar autoload bug (FIXED?)
 "let g:tagbar_updateonsave_maxlines = 5000

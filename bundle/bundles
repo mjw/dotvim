@@ -24,4 +24,4 @@ git submodule add git://github.com/tpope/vim-ragtag.git bundle/ragtag
 git submodule add git://github.com/jeetsukumaran/vim-buffersaurus.git bundle/vim-buffersaurus
 git submodule add git://github.com/fmoralesc/vim-pad.git bundle/vim-pad
 git submodule add git://github.com/natw/vim-pythontextobj.git bundle/vim-pythontextobj
-git submodule add git://github.com/mjw/tslime.vim.git bundle/tslime
+git submodule add git://github.com/jpalardy/vim-slime.git bundle/vim-slime

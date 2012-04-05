@@ -231,3 +231,9 @@ autocmd BufWinLeave * call clearmatches()
 
 " strip trailing whitespace
 nmap <leader>ws :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+" vim-slime
+let g:slime_target = "tmux"
+let g:slime_send_key = '<Leader>ts'
+let g:slime_config_key = '<Leader>tc'
+

@@ -18,6 +18,14 @@ if v:version < '702'
     call add(g:pathogen_disabled, 'gnupg')
 endif
 
+" Disable p4 by default
+call add(g:pathogen_disabled, 'perforce')
+
+let P4ENABLE=expand("~/.p4enable")
+if filereadable(P4ENABLE)
+   call remove(g:pathogen_disabled, 'perforce')
+endif
+
 call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on

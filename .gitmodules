@@ -58,15 +58,9 @@
 [submodule "bundle/vim-buffersaurus"]
 	path = bundle/vim-buffersaurus
 	url = git://github.com/jeetsukumaran/vim-buffersaurus.git
-[submodule "bundle/vim-pad"]
-	path = bundle/vim-pad
-	url = git://github.com/fmoralesc/vim-pad.git
 [submodule "sparkup"]
 	path = sparkup
 	url = git://github.com/rstacruz/sparkup.git
-[submodule "bundle/netrw"]
-	path = bundle/netrw
-	url = https://github.com/vim-scripts/netrw.vim.git
 [submodule "bundle/vim-pythontextobj"]
 	path = bundle/vim-pythontextobj
 	url = git://github.com/natw/vim-pythontextobj.git

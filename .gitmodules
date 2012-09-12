@@ -31,9 +31,6 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
-[submodule "bundle/jslint"]
-	path = bundle/jslint
-	url = git://github.com/hallettj/jslint.vim.git
 [submodule "bundle/jekyll"]
 	path = bundle/jekyll
 	url = git://github.com/csexton/jekyll.vim.git
@@ -76,3 +73,6 @@
 [submodule "bundle/vim-slime"]
 	path = bundle/vim-slime
 	url = git://github.com/jpalardy/vim-slime.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

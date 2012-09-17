@@ -23,7 +23,7 @@ call add(g:pathogen_disabled, 'perforce')
 
 let P4ENABLE=expand("~/.p4enable")
 if filereadable(P4ENABLE)
-   call remove(g:pathogen_disabled, 'perforce')
+    call remove(g:pathogen_disabled, 'perforce')
 endif
 
 call pathogen#infect()
@@ -85,11 +85,6 @@ nnoremap k gk
 syntax on
 
 set tags=./tags;/
-
-"Auto lint check python files
-autocmd FileType python compiler pylint
-"but dont auto open quickfix window
-let g:pylint_cwindow = 0
 
 "Toggle nerdtree with nt
 nnoremap <leader>nt :NERDTreeToggle<cr>

@@ -28,7 +28,9 @@ endif
 
 call pathogen#infect()
 call pathogen#helptags()
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 
 set nocompatible
 
@@ -240,3 +242,5 @@ let g:slime_target = "tmux"
 let g:slime_send_key = '<Leader>ts'
 let g:slime_config_key = '<Leader>tc'
 
+" Powerline test
+set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim

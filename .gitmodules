@@ -73,3 +73,9 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
+[submodule "bundle/vim-behat"]
+	path = bundle/vim-behat
+	url = git://github.com/veloce/vim-behat.git
+[submodule "bundle/vim-numbertoggle"]
+	path = bundle/vim-numbertoggle
+	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
